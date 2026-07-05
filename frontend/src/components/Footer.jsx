@@ -8,7 +8,7 @@ export default function Footer() {
               <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">X</span>
               </div>
-              <span className="text-xl font-bold"><span className="text-primary-400">X</span></span>
+              <span className="text-primary-400">X</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Enterprise Odoo solutions that drive digital transformation and business growth.

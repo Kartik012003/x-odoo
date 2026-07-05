@@ -14,14 +14,14 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="section-padding">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="relative flex items-center h-16 lg:h-20">
           <a href="#hero" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">X</span>
             </div>
           </a>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -31,6 +31,9 @@ export default function Navbar() {
                 {item.label}
               </a>
             ))}
+          </div>
+
+          <div className="hidden lg:flex items-center ml-auto">
             <a
               href="#contact"
               className="bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors"
